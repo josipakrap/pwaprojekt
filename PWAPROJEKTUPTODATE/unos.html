@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unos Vijesti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="slike/punch.png" width="50px"/><h1>Fight World TV</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="indeks.php">Početna</a></li>
+            <li><a href="kategorija.php?kategorija=MMA">MMA</a></li>
+            <li><a href="kategorija.php?kategorija=Box">Box</a></li>
+            <?php if ($_SESSION['razina'] == 1): ?>
+                <li><a href="unos.html">Unos</a></li>
+                <li><a href="administrator.php">Administracija</a></li>
+            <?php endif; ?>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <center><h2>Unos Vijesti</h2></center>
+            <form enctype="multipart/form-data" action="skripta.php" method="post">
+                <label for="naslov">Naslov:</label><br>
+                <input type="text" id="naslov" name="naslov" required><br><br>
+                
+                <label for="tekst">Sadržaj:</label><br>
+                <textarea id="tekst" name="tekst" rows="4" cols="50" required></textarea><br><br>
+                
+                <label for="sazetak">Sažetak:</label><br>
+                <textarea id="sazetak" name="sazetak" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="slika">Slika:</label><br>
+                <input type="file" id="slika" name="slika" required><br><br>
+                
+                <label for="kategorija">Kategorija:</label><br>
+                <select id="kategorija" name="kategorija" required>
+                    <option value="MMA">MMA</option>
+                    <option value="Box">Box</option>
+                </select><br><br>
+                
+                <label for="arhiva">Arhivirati:</label>
+                <input type="checkbox" id="arhiva" name="arhiva" value="1"><br><br>
+                
+                <input type="submit" value="Unesi Vijest">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Stranice mreže grupe Fight World TV</p>
+        <p>&copy; Fight World TV</p>
+    </footer>
+</body>
+</html>

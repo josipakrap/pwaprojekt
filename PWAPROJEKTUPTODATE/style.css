@@ -1,0 +1,353 @@
+article img {
+    border: 2px solid white;
+    width: 175px;  
+    object-fit: cover; 
+}
+
+.kslika {
+    border: 2px solid white;
+    width: 80%;  
+    object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .kslika {
+        border: 2px solid white;
+        width: 100%;  
+        object-fit: cover; 
+    }
+    .kategorija{
+        width: 95%;
+    }
+    header h1 {
+        font-size: 1.5em; 
+    }
+    .clanakk {
+        padding: 10px;
+        background-color: #ebebeb;
+        box-shadow: 5px 3px 5px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .clanakk p{
+        text-align: left;
+    }
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    nav li {
+        text-align: center; 
+        padding: 8px;
+    }
+    .admin{
+        border: none;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+    section, footer {
+        width: 90%;
+        text-align: center;
+    }
+
+    section div {
+        flex-direction: column;
+        width: 100%; 
+    }
+    .naslovv {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    article {
+        padding: 8px;
+        border-right: none;   
+        margin: 0 auto;
+    }
+    article img {
+        border: 2px solid white;
+        width: 100%;
+        height: auto; 
+    }
+    section img {
+        width: 90%;
+    }
+    .admin{
+        border: none;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav li {
+        padding: 6px; 
+    }   
+    
+    footer {
+        width: 100%;
+        padding: 10px;
+    }
+    section h2 {
+        font-size: 1em; 
+    }
+
+    article {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    article img {
+        border: 2px solid white;
+        width: 100%;
+        height: auto; 
+    }
+    section img {
+        width: 90%;
+    }
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    font-size: 40px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right a, .header-right p {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    color: red; 
+}
+
+nav {
+    padding: 0;
+    font-size: 1.8em;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: left; 
+    width: 62%;
+    margin: 0 auto;
+}
+
+nav li {
+    padding: 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em; 
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red; 
+}
+
+section {
+    width: 60%;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #333; 
+}
+
+.article-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    background-color: #ebebeb;
+    box-shadow: 5px 3px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.clanakk {
+    padding: 10px;
+    background-color: #ebebeb;
+    box-shadow: 5px 3px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+article {
+    flex: 1 0 21%; 
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+article p {
+    word-wrap: break-word; 
+    text-overflow: ellipsis; 
+}
+
+article a:hover {
+    color: red; 
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.naslovv {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+form {
+    width: 80%; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+label {
+    display: block; 
+    margin: 15px 0 5px; 
+    font-size: 1.1em; 
+    color: #333; 
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+textarea {
+    height: 150px; 
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: crimson; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 1em; 
+    margin-top: 10px; 
+}
+
+.admin {
+    border: none;
+    display: flex;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.gumbb {
+    background-color: crimson; 
+    color: white; 
+    padding: 5px 15px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 1em; 
+    margin-top: 10px; 
+    margin-left: 20px; 
+}
+
+.gumbb:hover {
+    background-color: black; 
+}
+
+input[type="submit"]:hover {
+    background-color: red; 
+}
+
+.sekcija {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #ebebeb;
+    box-shadow: 5px 3px 5px rgba(0,0,0,0.1);
+    padding: 10px; 
+    display: block;
+}
+
+.sekcija h2 {
+    color: #333; 
+}
+
+.sekcija img {
+    border: 4px solid white;
+    width: 87%;
+}
