@@ -16,7 +16,10 @@ $razina = $loggedIn && isset($_SESSION['razina']) ? $_SESSION['razina'] : 0;
 </head>
 <body>
     <header>
-        <img src="slike/punch.png" width="50px"/><h1>Fight World TV</h1>
+    <div class="header-left">
+            <img src="slike/punch.png" width="50px"/>
+            <h1>Fight World TV</h1>
+        </div>
     </header>
     <nav>
         <ul>
